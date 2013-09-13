@@ -40,8 +40,8 @@ if virtual_env:
         # just in case we switch
         os.system("pip install -U -r requirements.txt")
 
-    # always syncdb + migrate
-    os.system('%s manage.py syncdb --noinput --migrate' % python)
+    # always syncdb 
+    os.system('%s manage.py syncdb --noinput' % python)
 
     # always update static
     print 'Running updatestatic...'

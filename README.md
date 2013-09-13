@@ -28,7 +28,6 @@ This setup assumes you have just cloned the git repo and are in the directory wi
     $ python setup.py develop --always-unzip                                            # Fill the virtualenv with Python dependencies
     $ cp balt/local.py.example balt/local.py                                            # Your local.py is your personal settings. Edit them later.
     $ python manage.py syncdb --noinput                                                 # Fill out the database schema
-    $ python manage.py migrate                                                          # Incremental updates to database schema
     $ python manage.py createsuperuser                                                  # Establish an admin so you can log in
     $ python manage.py runserver                                                        # Prove this works by visiting http://localhost:8000
 
@@ -42,7 +41,6 @@ sure you have any new dependencies or schema modifications:
     $ . ve/bin/activate                                               # Turn on the virtualenv (Every time!)
     $ python setup.py develop --always-unzip                          # Update the virtualenv with new Python dependencies
     $ python manage.py syncdb --noinput                               # Make sure the database schema is still filled out
-    $ python manage.py migrate                                        # Apply incremental updates to database schema
     $ python manage.py runserver                                      # Prove this works by visiting http://localhost:8000
 
 ### Git Hooks
@@ -53,7 +51,7 @@ git pull, you can install git hooks. From the project root, simply run:
     $ git-hooks/install-hooks
 
 This will install (and keep up to date) some scripts in the .git directory that will automatically
-update your python packages, run migrations, delete .pyc files, update static, etc.
+update your python packages, delete .pyc files, update static, etc.
 
 ## Tests
 
