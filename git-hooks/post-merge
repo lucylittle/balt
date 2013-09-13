@@ -42,7 +42,3 @@ if virtual_env:
 
     # always syncdb 
     os.system('%s manage.py syncdb --noinput' % python)
-
-    # always update static
-    print 'Running updatestatic...'
-    os.system('%s manage.py updatestatic -f -v 0' % python)

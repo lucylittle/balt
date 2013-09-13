@@ -27,6 +27,7 @@ setup(
         'py-bcrypt',
         'lxml>=3.2.0',
         'html5lib',
+        'cssselect',
 
         'django-nose',
     ],

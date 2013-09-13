@@ -51,7 +51,7 @@ git pull, you can install git hooks. From the project root, simply run:
     $ git-hooks/install-hooks
 
 This will install (and keep up to date) some scripts in the .git directory that will automatically
-update your python packages, delete .pyc files, update static, etc.
+update your python packages, delete .pyc files, etc.
 
 ## Tests
 

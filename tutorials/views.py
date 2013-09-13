@@ -25,5 +25,5 @@ def tutorial_list(request):
     '''
     toots = tutorials.models.Tutorial.objects.all()
     return render(request, 'tutorials.html', {
-        'tutorials': toots
+        'tutorials': toots,
     })
