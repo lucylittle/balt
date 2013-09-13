@@ -25,8 +25,10 @@ setup(
     install_requires=[
         'Django>=1.5.3,<1.6',
         'py-bcrypt',
-        'django-nose',
         'lxml>=3.2.0',
+        'html5lib',
+
+        'django-nose',
     ],
     entry_points="""
     # -*- Entry points: -*-
