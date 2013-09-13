@@ -1,0 +1,30 @@
+{% block title %}Tutorials{% endblock %}
+
+
+{% block main %}
+
+<p class="site-description">Welcome to Balt, a new tool to help you and your team learn. 
+We’ve hired experts to guide you through the world’s leading works in technology and business, and
+the resulting Tutorials deliver targeted, sequenced training on today’s most important topics.</p>
+
+<div class="all-toots eight columns">
+
+  {% for tutorial in tutorials %}
+    <div class="panel list-o-tutorials t-group-list">
+      <ol class="tutorial-list">
+        {% for tutorial in group.tutorials.all %}
+          <li class="row">
+            <div class="eight columns tutorial-box">
+              <h3 class="title"><a class="t-tutorial-title" href="#FIXME">{{ tutorial.title|safe }}</a></h3>
+              <div class="tutorial-description t-tutorial-short-description">{{ tutorial.short_description|default:""|safe }}</div>
+            </div>
+            <a href="#FIXME" class="button start-button">Start</a>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  {% endfor %}
+
+</div>
+
+{% endblock main %}
