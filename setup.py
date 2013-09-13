@@ -26,6 +26,7 @@ setup(
         'Django>=1.5.3,<1.6',
         'py-bcrypt',
         'django-nose',
+        'lxml>=3.2.0',
     ],
     entry_points="""
     # -*- Entry points: -*-
