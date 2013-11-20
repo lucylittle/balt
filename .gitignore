@@ -56,3 +56,5 @@ storage
 *.swp
 
 media
+
+node_modules

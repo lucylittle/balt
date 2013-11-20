@@ -2,7 +2,30 @@
 
 balt is sample code for interviews that relates to the code that powers the Tutorials product at
 http://safaritutorials.com. This document is written for people who want to run that code on their
-own computer.
+own computer. Depending on what you're doing, refer to either the JavaScript or the Python section.
+
+
+
+# JavaScript
+
+## Mac Setup
+
+### System dependencies
+
+Install a recent version of node.
+
+### Very first time 
+
+    $ cd api
+    $ npm install
+
+### Every time
+
+    $ cd api
+    $ node manage_users.js
+
+
+# Python
  
 ## Mac Setup
 

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/foundation/4.3.2/css/foundation.min.css">
+
+    <title>Admin: Manage Users</title>
+  </head>
+  <body class="manage_users">
+    <h2 class="header-panel header-center">Manage Users</h2>
+    <div class="row">
+      <div class="six columns">
+        <h4 class="dash-header">Users</h4>
+      </div>
+      <div class="find-user">
+        <label for="find-user">Find user by email address</label>
+        <input name="email" autocapitalize="off" autocorrect="off" type="email" autofocus="autofocus" id="find-user" placeholder="search for user"/>
+      </div>
+      <div class="twelve columns">
+        <table class="user-dash user-table t-user-table">
+          <thead>
+            <tr>
+              <th>Email Address</th>
+              <th>Revoke Access</th>
+              <th>Date Joined</th>
+              <th>Last Login</th>
+              <th>Completed</th>
+              <th/>
+            </tr>
+          </thead>
+          <tbody id="users">
+            <tr class="user">
+              <td>sally@safaribooksonline.com</td>
+              <td>
+                <a class="revoke" data-revoke="5">X</a>
+              </td>
+              <td>2013-10-09</td>
+              <td>2013-10-09</td>
+              <td>1</td>
+              <td class="show-more">
+                <a class="button" href="#">Detail</a>
+              </td>
+            </tr>
+            <tr class="user">
+              <td>keith@safaribooksonline.com</td>
+              <td>
+                <a class="revoke" data-revoke="4">X</a>
+              </td>
+              <td>2013-09-28</td>
+              <td>2013-11-05</td>
+              <td/>
+              <td class="show-more">
+                <a class="button" href="#">Detail</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="six columns">
+        <h4 class="dash-header">Account Admins</h4>
+      </div>
+      <div class="find-user">
+        <label for="find-user">Find account admin by email address</label>
+        <input name="email" autocapitalize="off" autocorrect="off" type="email" autofocus="autofocus" id="find-admin-user" placeholder="search for user"/>
+      </div>
+      <div class="twelve columns">
+        <table class="user-dash user-table t-manager-table">
+          <thead>
+            <tr>
+              <th>Email Address</th>
+              <th>Revoke Access</th>
+              <th>Date Joined</th>
+              <th>Last Login</th>
+              <th>Completed</th>
+              <th/>
+            </tr>
+          </thead>
+          <tbody id="managers">
+            <tr class="user">
+              <td>yoshi+admin@safaribooksonline.com</td>
+              <td>
+                <a class="revoke" data-revoke="1">X</a>
+              </td>
+              <td>2013-09-10</td>
+              <td>2013-11-20</td>
+              <td>1</td>
+              <td class="show-more">
+                <a class="button" href="#">Detail</a>
+              </td>
+            </tr>
+            <tr class="details">
+              <td colspan="6">
+                <ul id="dash-progress">
+                  <li class="title">
+                    <h4>In Progress</h4>
+                  </li>
+                  <li>
+                    <h4>TUTORIAL: <span class="title">Collaboration</span></h4>
+                    <h4 class="right">16 lessons complete </h4>
+                    <br/>
+                    <span class="right">Started on 2013-10-07</span>
+                  </li>
+                  <li>
+                    <h4>TUTORIAL: <span class="title">Developing Others</span></h4>
+                    <h4 class="right">12 lessons complete </h4>
+                    <br/>
+                    <span class="right">Started on 2013-10-07</span>
+                  </li>
+                  <li>
+                    <h4>TUTORIAL: <span class="title">Change Management</span></h4>
+                    <h4 class="right">23 lessons complete </h4>
+                    <br/>
+                    <span class="right">Started on 2013-10-02</span>
+                  </li>
+                  <li class="title">
+                    <h4>Completed</h4>
+                  </li>
+                  <li>
+                    <h4>TUTORIAL: <span class="title">Building Teams</span></h4>
+                    <h4 class="right">15 lessons complete </h4>
+                    <br/>
+                    <span class="right">Started on 2013-10-02</span>
+                    <span class="right">Finished on 2013-11-02</span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
